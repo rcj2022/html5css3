@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +10,47 @@
   <link rel="icon" href="img/semed.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Cabeçalho -->
-  <header>
-<div class="Container"></div>
+  <header id="inicio">
+    <div class="Container">
+      <div id="logo">
+        <img src="img/logo.png" alt="hal 9000">
+      </div>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check">&#x268C;</label>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#conteudo">Conteúdo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- Destaque -->
-  <!-- nav-bar -->
-  <nav>Menu</nav>
   <main>
     <div class="Container">
       <h1>HTML5 e CSS3</h1>
       <h2>Você faz. Você vê.Você aprende</h2>
     </div>
-    
+
   </main>
   <!-- Sobre -->
-  <section>
+  <section id="sobre">
     <div class="Container">
       <h2>Aprender na prática</h2>
     </div>
-   
+
   </section>
   <!-- One Page -->
   <section>
     <div class="Container">
       <h2>on page site</h2>
     </div>
-   
+
   </section>
   <!-- Wireframe -->
   <section>
@@ -44,8 +58,8 @@
       <h2>Wireframe</h2>
     </div>
   </section>
-    <!-- Conteúdo -->
-  <section>
+  <!-- Conteúdo -->
+  <section id="conteudo">
     <div class="Container">
       <h2>Conteúdo</h2>
       <h3>HTML5</h3>
@@ -54,14 +68,16 @@
 
 
     </div>
-    
+
   </section>
   <!-- Roda pé -->
 
-  <footer>
+  <footer id="contato">
     <div class="Container">
-      
+
     </div>
   </footer>
+  <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo do site"></a>
 </body>
+
 </html>

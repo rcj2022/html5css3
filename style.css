@@ -16,7 +16,14 @@ body{
 .Container{
 
     margin: 0 auto;
-    background-color: #7f0;
+    background-color: #dcdcdc;
+}
+#topo{
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
 }
 
 @media(min-width:576px){
