@@ -1,33 +1,40 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Professor Romel Cardoso
+@author Romel
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
-*{
+ /* CSS Reset */
+ * {
     margin: 0;
     border: 0;
     padding: 0;
-}
 
 
-body{
+ }
+ body {
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
-}
-/*Layout*/
-
-.Container{
-
+ }
+ /* Layout */
+ .Container {
     margin: 0 auto;
+   
+
+ }
+ .Flex {
+
+    display: flex;
+    justify-content: space-between ;
     
-}
-.Flex{
+ }
+ .Flex2 {
 
-display: flex;
-justify-content: space-between;
-
-
-}
-.Botao{
+    display: flex;
+    align-items: center;
+ }
+ .Botao {
 
     text-decoration: none;
     color: #fff;
@@ -37,178 +44,199 @@ justify-content: space-between;
     padding: 10px 40px;
     border: 2px solid #fff;
     border-radius: 25px;
-}
-/*SmartPhone Portrait*/
-header{
+ }
+ /* topo do site */
+ #topo {
 
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+ }
+
+/* SmartPhone Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Cabeçalho */
+header {
     height: 60px;
-}
-#logo img{
 
+}
+#logo img {
     width: 128px;
     height: 128px;
 }
-#check{
+#check {
+
     display: none;
-
-
 }
-label{
-
+/* label do icone de --- */
+label {
     font-size: 3em;
     padding-right: 15px;
 
 }
-nav ul{
 
+nav ul {
     list-style: none;
-    background-color: #343538;
+    background-color: #303538;
     height: 100vh;
     position: fixed;
     top: 60px;
     right: -100%;
     width: 100%;
     transition: all 0.5s;
-
 }
-#check:checked ~ ul{
-    right: 0%;
-
+#check:checked ~ ul {
+    right: 0;
 }
-nav ul li{
+
+nav ul li {
     padding: 20px;
     border-bottom: 1px solid #a9a9a9;
 
-
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: #fff;
-
 }
-/* Destaques */
-main{
+/* Destaque */
+main {
     height: 75vh;
     background: url(img/banner.jpg);
     background-size: cover;
+    background-position: center;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-main h1{
-
+main h1 {
     font-size: 2.5em;
 
 }
-main h2{
+main h2 {
     font-size: 1em;
     margin: 20px 0px 50px 0px;
 }
-
-/*topo do site*/
-#topo{
-
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-
+/*sobre*/
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
 }
-
-@media(min-width:576px){
-   
-    .Container{
-
-        max-width: 540px;
-    }
-}
-/* Destaques di banner */
-main h1,main h2{
-    text-shadow: #000 0.05em 0.05em 0.05em;
-
-}
-/* Tablet Portrait................. */
-
-@media(min-width:768px){
-   
-    .Container{
-
-        max-width: 720px;
-    }
-
-
-}
-/* Destaque */
-main{
-    height: 45vh;
-}
-main h1{
-    font-size: 5.5em;
-}
-main h2{
-    font-size: 2em;
-}
-/* Table Lanscape */
-
-@media(min-width:992px){
-    
-    .Container{
-
-        max-width: 960px;
-    }
-    /* Destaque */
-    main{
-        height: 70vh;
-    }
-
-
-}
-/* para pc>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media(min-width:1200px){
-    
-    .Container{
-
-        max-width: 1140px;
-    }
-/* Cabeçalho */
-header{
-
-    height: 120px;
-}
-#logo img{
-
-    width: 189px;
-    height: 189px;
-    margin-top: 30px;
-}
-label{
-
+#destaquesobre {
     display: none;
 }
-nav ul{
-
-    position: static;
-    height: auto;
-    background-color: transparent;
-    margin-top: 50px;
+#textosobre {
+    color: #fff;
+    padding: 0px 10px;
 }
-nav ul li{
-    float: left;
-    border: 0;
+#textosobre h2 {
+    margin-bottom: 10px;
+}
+.topicosobre {
+    margin-top: 20px;
 
 }
-nav ul li a{
-
-    color: #303538;
-}
-nav ul li a:hover{
-
-    color: #c00000;
-}
-
-
+.topicosobre img {
+    margin-right: 10px;
 }
 
 
 
+/* SmartPhone LandScape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 576px){
+   
+    /* Layout */
+    .Container{
+        max-width: 540px;
+    }
+    /* banner */
+    main h1, main h2 {
+        text-shadow: #000 0.05em 0.05em 0.05em ;
+    }
+}
+
+/* Tablet Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 768px){
+    .Container{
+        max-width: 720px;
+    }
+    /* banner */
+    main {
+
+        height: 45vh;
+    }
+    main h1 {
+
+        font-size: 5.5em;
+    }
+    main h2 {
+        font-size: 2em;
+    }
+}
+/* Tablet Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 992px){
+    
+     /* Layout */
+    .Container{
+        max-width: 960px;
+    }
+    /* banner */
+    main {
+        height: 70vh;
+    }
+}
+/* pc>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 1200px){
+   
+     /* Layout */
+    .Container{
+        max-width: 1140px;
+
+        /* Cabeçalho */
+        
+    }
+    header{
+
+        height: 120px;
+    }
+    #logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+    label {
+        display: none;
+    }
+    nav ul{
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+    nav ul li a{
+
+        color: #303538;
+    }
+    nav ul li a:hover{
+        color: #c00000;
+    }
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed;
+    }
+    #destaquesobre {
+        display: inline;
+    }
+    #destaquesobre img {
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+}
