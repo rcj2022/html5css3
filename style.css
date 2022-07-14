@@ -1,10 +1,8 @@
 
-/* Professor Romel Cardoso
-@author Romel
- */
  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
  /* CSS Reset */
+
  * {
     margin: 0;
     border: 0;
@@ -33,6 +31,11 @@
 
     display: flex;
     align-items: center;
+ }
+ .Flex3 {
+    display: flex;
+    flex-direction: column;
+
  }
  .Botao {
 
@@ -145,7 +148,23 @@ main h2 {
 .topicosobre img {
     margin-right: 10px;
 }
+/* one page */
+#onepage {
+    padding: 50px 10px;
+}
+#onepage h2 {
+    margin-bottom: 10px;
+}
+#onepage p {
+    margin-bottom: 25px;
+}
+#video iframe{
+    width: 340px;
+    height: 191px;
+    border: 0;
 
+
+}
 
 
 /* SmartPhone LandScape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -158,6 +177,12 @@ main h2 {
     /* banner */
     main h1, main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em ;
+    }
+    /* One page */
+    #video iframe{
+        width: 560px;
+        height: 315px;
+    
     }
 }
 
@@ -240,5 +265,10 @@ main h2 {
     #destaquesobre img {
         border-radius: 50%;
         margin-right: 50px;
+    }
+    /* one page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
     }
 }
