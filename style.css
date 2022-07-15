@@ -44,6 +44,7 @@ body {
   bottom: 10px;
 }
 
+
 /* SmartPhone Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* Cabeçalho */
@@ -147,6 +148,31 @@ main h2 {
   border: 0;
 }
 
+#wireframe{
+  padding: 50px 0px;
+  background: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+#textowire {
+  color: #fff;
+  padding: 0px 10px;
+}
+#textowire h2 {
+  margin-bottom: 10px;
+
+}
+#textowire p {
+  margin-bottom: 40px;
+}
+#textowire span {
+  display: none;
+}
+#qrcode {
+  display: none;
+}
+
 /* SmartPhone LandScape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
   /* Layout */
@@ -163,6 +189,7 @@ main h2 {
     width: 560px;
     height: 315px;
   }
+
 }
 
 /* Tablet Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -242,5 +269,9 @@ main h2 {
   .Flex3 {
     flex-direction: row;
     align-items: center;
+  }
+  #wireframe {
+    background-attachment: fixed;
+    
   }
 }
